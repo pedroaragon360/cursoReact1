@@ -14,6 +14,7 @@ import ItemsFetch from './dia2/ItemsFetch'
 import BotonFetch from './dia2/BotonFetch'
 import EventoCambio from './dia2/EventoCambio'
 import UserPanel from './dia2/UserPanel'
+import ListContainer from './dia2/ListContainer_refactor'
 
 
 
@@ -45,6 +46,7 @@ function App() {
       <BotonFetch />
       <EventoCambio />
       <UserPanel />
+      <ListContainer />
       </header>
     </div>
   );
