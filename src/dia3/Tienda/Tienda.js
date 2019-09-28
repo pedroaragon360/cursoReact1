@@ -37,7 +37,7 @@ class Tienda extends React.Component {
     render(){
         return (
             <>
-            <Carrito productos={this.state.productos} cart={this.state.cart}/>
+            <Carrito productos={this.productos} cart={this.state.cart}/>
              <Catalogo productos={this.productos} onClick={this.addProduct}/>
             </>
         )
