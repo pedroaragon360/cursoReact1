@@ -17,7 +17,7 @@ const InputText = props =>
 
 class ListContainer extends React.Component {
 
-    state = {items: [{id:1,val:'hola'}],text:''}
+    state = {items: [{id:1,val:'hola2'}],text:''}
 
     addItem = () => 
         this.setState({items: [...this.state.items,this.state.text], text:''})

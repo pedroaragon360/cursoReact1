@@ -15,6 +15,10 @@ import BotonFetch from './dia2/BotonFetch'
 import EventoCambio from './dia2/EventoCambio'
 import UserPanel from './dia2/UserPanel'
 import ListContainer from './dia2/ListContainer_refactor'
+import SelectItems from './dia3/SelectItems'
+import Form from './dia3/Form'
+import LevantarEstado from './dia3/LevantarEstado'
+import Tienda from './dia3/Tienda/Tienda'
 
 
 
@@ -43,10 +47,17 @@ function App() {
       </Loading> */}
       {/* <Usuarios></Usuarios>
       <ItemsFetch /> */}
-      <BotonFetch />
+      {/* <BotonFetch />
       <EventoCambio />
       <UserPanel />
-      <ListContainer />
+      <ListContainer /> */}
+      {/* <SelectItems /> */}
+{/* 
+      <Form />
+
+      <LevantarEstado /> */}
+      <Tienda />
+
       </header>
     </div>
   );
