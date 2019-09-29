@@ -29,6 +29,8 @@ function App() {
     <div className="App">
       <header className="App-header">
       <img src={logo} width="200"/>
+      </header>
+
       {/* 
 
       DIA 1
@@ -46,19 +48,18 @@ function App() {
           <PlayLetters />
       </Loading> */}
       {/* <Usuarios></Usuarios>
-      <ItemsFetch /> */}
-      {/* <BotonFetch />
+      <ItemsFetch /> *
+      <BotonFetch />
       <EventoCambio />
-      <UserPanel />
-      <ListContainer /> */}
-      {/* <SelectItems /> */}
-{/* 
+      <UserPanel /> */}
+      {/* <ListContainer /> */}
+      {/* <SelectItems />
+
       <Form />
 
-      <LevantarEstado /> */}
+      <LevantarEstado />  */}
       <Tienda />
 
-      </header>
     </div>
   );
 }

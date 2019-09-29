@@ -1,0 +1,25 @@
+.carritoStyle {
+    border: 1px solid red;
+    padding: 10px;
+}
+.productItem,.flexitem {
+    padding: 10px;
+    display:flex;
+}
+
+.productItem div:nth-child(1) {
+    flex:4;
+    text-align:left;
+}
+.productItem div:nth-child(2) {
+    flex:1;
+}
+.productItem div:nth-child(3) {
+    flex:1;
+}
+input[type=number] {
+    width: 3em
+}
+.flexitem div {
+    flex:1;
+}
