@@ -32,7 +32,7 @@ const Carrito = (props) =>
             )}
             <div className="flexitem">
                 <div>Cupon</div>
-                <div><input type="text" placeholder="codigo" onChange={props.applyCupon}/></div>
+                <div><input ref={props.cuponRef} type="text" placeholder="codigo"/><input type="submit"  value="enviar" onClick={props.applyCupon} /></div>
             </div>
             <div>Total: {cartTotal} €</div>
         </div>
@@ -54,6 +54,9 @@ const Catalogo = (props) =>
 
 
 class Tienda extends React.Component {
+
+    cuponRef = React.createRef();
+
     productos = [
         {id:1,name:'Cocacola',price:1},
         {id:2,name:'Fanta',price:2},
@@ -108,18 +111,19 @@ class Tienda extends React.Component {
         }
     }
     applyCoupon = (e) => {
-        console.log(e.target.value)
-        let total = this.promoCodes.filter((p) => p.hasOwnProperty(e.target.value) === true).length;
+        const cuponValue = this.cuponRef.current.value;
+        let total = this.promoCodes.filter((p) => p.hasOwnProperty(cuponValue) === true).length;
         if(total > 0){
-            this.setState({promoCode:e.target.value})
-            this.saveToLocalStorage('cupon',e.target.value)
+            this.setState({promoCode:cuponValue})
+            this.saveToLocalStorage('cupon',cuponValue)
+            alert("valido")
         }
     }
     render(){
         return (
             <>
             <RenderConditional if={this.state.cart.length >0}>
-                <Carrito productos={this.productos} applyCupon={this.applyCoupon} cart={this.state.cart} 
+                <Carrito cuponRef={this.cuponRef} productos={this.productos} applyCupon={this.applyCoupon} cart={this.state.cart} 
                 unitsChange={this.unitsChange} deleteProduct={this.deleteProduct} />
             </RenderConditional>
             <Catalogo productos={this.productos} onClick={this.addProduct}/>
