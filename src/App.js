@@ -25,6 +25,7 @@ import ErrorTest from './dia4/ErrorTest'
 import APIApp from './dia4/APIApp'
 import styled, {css} from 'styled-components'
 import CorpColors from './dia4/CorpColors'
+import Hooks from './dia5/hooks'
 import PropTypes from 'prop-types'
 
 import './App.css';
@@ -103,7 +104,7 @@ function App() {
       <Form />
 
       <LevantarEstado />  */}
-      <Tienda />
+      {/* <Tienda /> */}
       {/* {<MultiLangSite />} */}
       {/* <ErrorBound>
         <ErrorTest />
@@ -112,6 +113,7 @@ function App() {
       {/* <Button>Hola mundo</Button>
       <Button success>Hola mundo</Button>
       <ShowServerConfig minConnections={true}  maxConnections={true}  restartAlways={true} environment="live" SSL={true} /> */}
+      <Hooks />
 
     </div>
   );
