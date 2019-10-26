@@ -1,0 +1,8 @@
+nav {
+    display:flex;
+
+}
+nav > span {
+    flex: 1 0 0;
+    text-align: center;
+}
