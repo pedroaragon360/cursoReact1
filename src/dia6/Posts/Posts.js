@@ -73,7 +73,7 @@ const PostsE = (props) => {
     }
 
     
-    return (dd
+    return (
         <>
             <h1>POSTS</h1> 
             <span>{props.posts.map((val,key) => {
